@@ -2,7 +2,7 @@
 
 Welcome to see our project! The project is about implementing a neural network with backpropagation. The structure of the neural network can be decided by the user. So, this neural network is capable of handling even deeper structure.
 
-The program is made with C. On of the reasons is that this way we can make it efficient.
+The program is made with C. One of the reasons is that this way we can make it efficient.
 
 ## Goals
 
