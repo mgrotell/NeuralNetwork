@@ -5,6 +5,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <fcntl.h>
+# include <math.h>
 
 # define WIN_W 1024
 # define WIN_H 768
@@ -24,8 +25,9 @@ typedef struct s_neuralnetwork
 
 
 
-
-
+double relu(double x);
+double leakyRelu(double x);
+double sigmoid(double x);
 
 
 #endif

@@ -10,7 +10,7 @@ all: $(NAME)
 
 $(NAME):
 	@make -C libft/
-	gcc $(C) -o $(NAME) $(FLAGS) -I $(IN)
+	gcc $(C) -o $(NAME) $(FLAGS) $(IN)
 
 clean:
 	@make -C libft/ clean
