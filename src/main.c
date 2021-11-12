@@ -6,12 +6,12 @@ int initializeNetwork(t_neuralnetwork *nn, char *settings)
 	
 
 
-
+	return(0);
 }
 
 
 
-int	main(int ac, char *av)
+int	main(int ac, char **av)
 {
 	t_neuralnetwork *nn;
 
@@ -21,7 +21,7 @@ int	main(int ac, char *av)
 		ft_putstr("./nn firstlayer hiddenlayers... outputlayer learningrate activation(1-3 sigmoid, ReLU, LeakyReLu)\n");
 		return(0);
 	}
-	if(!(nn = (t_neuralnetwork*)malloc(sizeof(t_neuralnetwork))) || initializeNetwork(nn, av))
+	if(!(nn = (t_neuralnetwork*)malloc(sizeof(t_neuralnetwork))) || initializeNetwork(nn, *av))
 	{
 		ft_putstr("Cannot initialize network");
 		return (0);
