@@ -14,7 +14,7 @@ O = ft_atoi.o ft_isprint.o ft_lstmap.o ft_memcpy.o ft_putendl.o ft_strcat.o ft_s
 	ft_isascii.o ft_lstdelone.o	ft_memchr.o	ft_putchar.o ft_putstr.o ft_strcpy.o ft_strjoin.o ft_strncmp.o ft_strsplit.o \
 	ft_isdigit.o ft_lstiter.o ft_memcmp.o ft_putchar_fd.o ft_putstr_fd.o ft_strdel.o ft_strlcat.o ft_strncpy.o	ft_strstr.o ft_countend.o ft_strndup.o get_next_line.o
 
-FLAGS = -Wall -Werror -Wextra
+FLAGS = -Wall -Wextra
 
 all: $(NAME)
 

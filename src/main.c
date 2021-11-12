@@ -1,6 +1,6 @@
-#include "../headers/neuralnetwork.h"
+#include "../headers/Neuralnetwork.h"
 
-int initializeNetwork(neuralnetwork_t *nn, char *settings)
+int initializeNetwork(t_neuralnetwork *nn, char *settings)
 {
 	int x = 0;
 	
@@ -13,15 +13,15 @@ int initializeNetwork(neuralnetwork_t *nn, char *settings)
 
 int	main(int ac, char *av)
 {
-	neuralnetwork_t *nn;
+	t_neuralnetwork *nn;
 
 	if(ac < 4)
 	{
-		ft_putstr("./nn 7 5 5 2 0.1 2");
-		ft_putstr("./nn firstlayer hiddenlayers... outputlayer learningrate activation(1-3 sigmoid, ReLU, LeakyReLu)");
+		ft_putstr("./nn 7 5 5 2 0.1 2\n");
+		ft_putstr("./nn firstlayer hiddenlayers... outputlayer learningrate activation(1-3 sigmoid, ReLU, LeakyReLu)\n");
 		return(0);
 	}
-	if(!(nn = (neuralnetwork_t*)malloc(sizeof(neuralnetwork_t))) || initializeNetwork(*nn, *settings))
+	if(!(nn = (t_neuralnetwork*)malloc(sizeof(t_neuralnetwork))) || initializeNetwork(nn, av))
 	{
 		ft_putstr("Cannot initialize network");
 		return (0);

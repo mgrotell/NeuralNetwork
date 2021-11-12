@@ -3,6 +3,7 @@
 
 # include "../libft/libft.h"
 # include <unistd.h>
+# include <stdlib.h>
 # include <fcntl.h>
 
 # define WIN_W 1024
